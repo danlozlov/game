@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <title>Переход на игры</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Игра о внешней архитектуре</title>
     <link rel="shortcut icon" href="img/image_for_site.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
     <header>
         <section class="top-nav">
             <a class="logo_header" href="#"></a>
@@ -47,54 +49,110 @@
             <li><a href="">Системный блок</a></li>
         </ul>
     </header>
-    <div class="block1">
-        <div class="block1_text">
-           Цифровые обучающие игры — это предмет исследования педагогики компьютерной игры, которая в свою очередь является частью медиапедагогики. Видеоигры могут быть также очень полезны в том смысле, что они создают эффект симуляции действия, но при этом не несут какой-либо очевидной опасности. Например, когда американские воздушные войска учат своих пилотов летать на самолёте, стоящем миллионы долларов, естественно, они не отправляют пилотов сразу же на взлётную полосу. ВВС используют симулятор вождения самолёта, чтобы подготовить пилотов к управлению настоящей машиной. Предлагаем Вам сыграть в наши игры о внешней и внутренней архитектуре компьютера.
+    <div class="content">
+        
+        <div class="container">
+            <div class="block_1_title">Собери свой компьютер прямо сейчас!</div>
+            <div class="block_2">
+                <div class="list">
+                    <ul>
+                        <li onclick="monitor_zoom()" >Монитор</li>
+                        <li onclick="system_zoom()" >Системный блок</li>
+                        <li onclick="keyboard_zoom()" >Клавиатура</li>
+                        <li onclick="mouse_zoom()" 
+                        >Мышь</li>
+                    </ul>
+                </div>
+                <div class="monitor_images">
+                    <div class="column">
+                        <div class="image1" onclick="monitor_choise1()"><img src="img/monitor1.png" alt=""></div>
+                        <div class="image2" onclick="monitor_choise3()"><img src="img/monitor3.png" alt=""></div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="image3"onclick="monitor_choise2()"><img src="img/monitor2.png" alt=""></div>
+                        <div class="image4"onclick="monitor_choise4()"><img src="img/monitor4.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="system-block_images">
+                    <div class="column">
+                        <div class="image1" onclick="system_choise1()"><img src="img/system1.png" alt=""></div>
+                        <div class="image2"onclick="system_choise2()"><img src="img/system2.png" alt=""></div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="image3"onclick="system_choise3()"><img src="img/system3.png" alt=""></div>
+                        <div class="image4"onclick="system_choise4()"><img src="img/system4.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="keyboard_images">
+                    <div class="column">
+                        <div class="image1"onclick="keyboard_choise1()"><img src="img/keyboard1.png" alt=""></div>
+                        <div class="image2"onclick="keyboard_choise2()"><img src="img/keyboard2.png" alt=""></div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="image3"onclick="keyboard_choise3()"><img src="img/keyboard3.png" alt=""></div>
+                        <div class="image4"onclick="keyboard_choise4()"><img src="img/keyboard4.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="mouse_images">
+                    <div class="column">
+                        <div class="image1" onclick="mouse_choise1()"><img src="img/mouse1.png" alt=""></div>
+                        <div class="image2" onclick="mouse_choise2()"><img src="img/mouse2.png" alt=""></div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="image3" onclick="mouse_choise3()"><img src="img/mouse3.png" alt=""></div>
+                        <div class="image4" onclick="mouse_choise4()"><img src="img/mouse4.png" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="block_3" onclick="show_results()" onclick="hide_result()">
+                <div class="block3_image"></div>
+                <div class="block3_text">Просмотреть <br></div>
+            </div>
+    </div>
+    <div class="result">
+        <div class="monitor_result">
+            <div class="mon_img1"><img src="img/monitor1.png" alt=""></div>
+            <div class="mon_img2"><img src="img/monitor2.png" alt=""></div>
+            <div class="mon_img3"><img src="img/monitor3.png" alt=""></div>
+            <div class="mon_img4"><img src="img/monitor4.png" alt=""></div>
         </div>
+        
+        <div class="keyboard_result">
+            <div class="key_img1"><img src="img/keyboard1.png" alt=""></div>
+            <div class="key_img2"><img src="img/keyboard2.png" alt=""></div>
+            <div class="key_img3"><img src="img/keyboard3.png" alt=""></div>
+            <div class="key_img4"><img src="img/keyboard4.png" alt=""></div>
+        </div>
+        
+        <div class="system_result">
+            <div class="sys_img1"><img src="img/system1.png" alt=""></div>
+            <div class="sys_img2"><img src="img/system2.png" alt=""></div>
+            <div class="sys_img3"><img src="img/system3.png" alt=""></div>
+            <div class="sys_img4"><img src="img/system4.png" alt=""></div>
+        </div>
+        
+        <div class="mouse_result">
+            <div class="mouse_img1"><img src="img/mouse1.png" alt=""></div>
+            <div class="mouse_img2"><img src="img/mouse2.png" alt=""></div>
+            <div class="mouse_img3"><img src="img/mouse3.png" alt=""></div>
+            <div class="mouse_img4"><img src="img/mouse4.png" alt=""></div>
+        </div>
+    </div>    
     </div>
 
-    <div class="block2_container">
-        <div class="block2">
-            <div class="block2_title">Польза  компьютерных игр для развития человека</div>
-            <div class="block2_stars">
-                <div class="star">
-                    <div class="star_image"><img src="img/star1.png" alt=""></div>
-                    <div class="star_title">Способность к обучению</div>
-                    <div class="star_subtitle">Игры развивают способность к обучению. Например, в стратегиях и головоломках не справиться без логического мышления, внимательности и хорошей памяти</div>
-                </div>
-                <div class="star">
-                    <div class="star_image"><img src="img/star2.png" alt=""></div>
-                    <div class="star_title">Навыки обшения</div>
-                    <div class="star_subtitle">Игры развивают навыки общения. В процессе игры мы учимся взаимодействовать с разными людьми, договариваться или отстаивать свою позицию</div>
-                </div>
-                <div class="star">
-                    <div class="star_image"><img src="img/star3.png" alt=""></div>
-                    <div class="star_title">Творческий подход</div>
-                    <div class="star_subtitle">Игры развивают творческий подход. Многие из них связаны с созданием внутреигровых объектов, которое требует креативного мышления</div>
-                </div>
-            </div>
-            <div class="block2_choise">
-                <div class="outer_game">
-                    <div class="choise_image"><img src="img/Картинка для внешней.jpg" alt=""></div>
-                    <div class="choise_title">Внешняя</div>
-                    <div class="choise_subtitle">Создайте из различных компонентов визуальную часть своего ПК. В этой игре Вы сможете подобрать мышку, клавиатуру, наушники и корпус. Создайте своё идеальное сочетание компонентов внешней архитектуры.</div>
-                    <div class="choise_button">
-                        <div class="button_text">Играть</div>
-                        <div class="button_imge"><img src="img/Arrow.png" alt=""></div>
-                    </div>
-                </div>
-                <div class="inner_game">
-                    <div class="choise_image"><img src="img/Картинка для внутренней.jpg" alt=""></div>
-                    <div class="choise_title">Внутренняя</div>
-                    <div class="choise_subtitle">Как мы все знаем, мощность компьюетра зависит от компонентов внутренней архитектуры. В этой игре Вы сможете поместить компоненты в корпус. Будьте внимательны и сможете собрать такой же в реальной жизни.</div>
-                    <div class="choise_button">
-                        <div class="button_text">Играть</div>
-                        <div class="button_imge"><img src="img/Arrow.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
+  
+    <div class="show_result">
+        <div class="show_top">
+            <div class="show_text">Вот, что у тебя получилось!</div>
+            <div class="button_show " onclick="hide_result()"><img src="img/cross.png" alt=""></div>
         </div>
-       
+        <div class="show_container"></div>
+    </div>    
     </div>
     <div class="footer">
         <div class="logo_footer">desPCription</div>
@@ -105,8 +163,6 @@
             <a href="#" class="insta"></a>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script/script.js"></script>
-    <script src="script/zoom.js"></script>
+    <script src="script/script2.js"></script>  
 </body>
 </html>
